@@ -13,11 +13,16 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between; /* Ajustado para alinhar o grupo logo/título e a navegação */
   align-items: center;
-  position: relative; /* Para posicionar o MobileMenu */
+  position: fixed; /* Para posicionar o MobileMenu */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa toda a largura da tela */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar o header */
   z-index: 1000; /* Garante que o header fique sobre outros conteúdos */
 
   @media (min-width: 768px) {
     padding: 20px 40px;
+    position: relative;
   }
 `;
 
@@ -68,13 +73,13 @@ export const Nav = styled.nav`
 // Link de Navegação
 export const NavLink = styled.a`
   color: ${COLOR.TEXT.SUBTITLE};
-  text-decoration: none;
+  text-decoration: none; // Por padrão, sem sublinhado
   font-weight: bold;
   padding: 5px 10px;
-  transition: color 0.3s ease;
+  transition: text-decoration 0.3s ease-in-out, color 0.3s ease;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
   }
 `;
 

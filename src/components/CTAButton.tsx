@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import COLOR from '../constants/colors.constants';
 
 interface CTAButtonProps {
   text: string;
@@ -8,7 +9,7 @@ interface CTAButtonProps {
 }
 
 const StyledButton = styled.button`
-  background-color: #128C7E; // bg-blue-500
+  background-color: ${COLOR.CTABUTTON.BG};
   color: white;
   font-weight: bold;
   padding: 0.4rem 1rem; 
@@ -17,9 +18,11 @@ const StyledButton = styled.button`
   cursor: pointer;
   text-decoration: none; // Para o caso de ser usado dentro de um <a>
   display: inline-block; // Para que o <a> se comporte como um botão
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); // sombra leve
+  z-index: 1000; // para garantir que fique acima de outros elementos
 
   &:hover {
-    background-color: #1d4ed8; // hover:bg-blue-700
+    background-color: ${COLOR.CTABUTTON.BG_HOVER}; 
   }
 
   // Permite adicionar classes extras se necessário

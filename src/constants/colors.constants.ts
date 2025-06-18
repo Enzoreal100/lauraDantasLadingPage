@@ -7,6 +7,14 @@ const COLOR = {
     SUBTITLE: "#555",
     HOVER: "#00bbff",
   },
+  FOOTER: {
+    TEXT: "#f0f0f0",
+    SUBTEXT: "#505353"
+  },
+  CTABUTTON: {
+    BG: "#128C7E",
+    BG_HOVER: "#0E7A69",
+  },
 
 }
 
