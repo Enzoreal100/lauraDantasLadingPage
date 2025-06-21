@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import CTAButton from './CTAButton';
+import CTAForms from './CTAForms';
 
 const HeroContainer = styled.section`
   position: relative;
@@ -45,11 +46,12 @@ const HeroSubtitle = styled.p`
 
 const HeroSection: React.FC = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id='home'>
       <HeroContent>
         <HeroTitle>Laura Dantas: Expertise em Psicopatologia, Carreira e Bem-Estar</HeroTitle>
         <HeroSubtitle>Especialista em transtornos psicopatológicos como depressão e transtorno bipolar, atuo também como guia em transição de carreira, promovendo a saúde mental e a adaptação em todas as etapas, do planejamento profissional ao bem-estar na terceira idade.</HeroSubtitle>
         <CTAButton text="Whatsapp" onClick={() => alert('Button clicked!')} />
+        <CTAForms text= "Formulário" onClick={() => alert('Forms clicked!')} />
       </HeroContent>
     </HeroContainer>
   );

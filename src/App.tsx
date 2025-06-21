@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import SpecialitiesSection from "./components/SpecialitiesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import FAQSection from "./components/FAQSection";
+import ContactSection from "./components/ContactSection";
 
 const Skeleton = styled.div`
   width: 100%;
@@ -11,6 +16,11 @@ function App() {
     <Skeleton>
       <Header/>
       <HeroSection/>
+      <AboutSection/>
+      <SpecialitiesSection/>
+      <TestimonialsSection/>
+      <FAQSection/>
+      <ContactSection/>
     </Skeleton>
     
   )
