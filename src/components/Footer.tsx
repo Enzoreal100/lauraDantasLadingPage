@@ -35,8 +35,8 @@ const FooterSubtext = styled.p`
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterText>Guaracy Laura Sylvestre Dantas</FooterText>
-      <FooterText>CRP: </FooterText>
+      <FooterText>Guaracylaura Sylvestre Dantas</FooterText>
+      <FooterText>CRP: 05/75363</FooterText>
       <FooterSubtext>Developed by Enzo Real © 2025 All rights reserved</FooterSubtext>
     </FooterContainer>
   );

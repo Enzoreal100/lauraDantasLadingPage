@@ -9,9 +9,10 @@ interface CTAButtonProps {
 }
 
 const StyledButton = styled.button`
-  background-color: ${COLOR.CTABUTTON.BG};
-  color: white;
+  background-color: ${COLOR.CTABUTTON.BG_FORMS};
+  color: ${COLOR.TEXT.TITLE};
   font-weight: bold;
+  margin-left: 15px;
   padding: 0.7rem 1.5rem; 
   border-radius: 2.5rem; // rounded
   border: none;
@@ -22,7 +23,7 @@ const StyledButton = styled.button`
   z-index: 1000; // para garantir que fique acima de outros elementos
 
   &:hover {
-    background-color: ${COLOR.CTABUTTON.BG_HOVER}; 
+    background-color: ${COLOR.CTABUTTON.BG_FORMS_HOVER}; 
   }
 
   // Permite adicionar classes extras se necessário
@@ -31,7 +32,7 @@ const StyledButton = styled.button`
   }
 `;
 
-const CTAButton: React.FC<CTAButtonProps> = ({ text, onClick, href, className }) => {
+const CTAForms: React.FC<CTAButtonProps> = ({ text, onClick, href, className }) => {
   if (href) {
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
@@ -49,4 +50,4 @@ const CTAButton: React.FC<CTAButtonProps> = ({ text, onClick, href, className })
   );
 };
 
-export default CTAButton;
+export default CTAForms;
