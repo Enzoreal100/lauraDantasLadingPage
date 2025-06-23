@@ -5,21 +5,6 @@ import CTAButton from './CTAButton';
 import CTAForms from './CTAForms';
 
 // Ícone de Localização (mantido para o mapa)
-const LocationIcon = () => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M12 22s-8-4-8-10A8 8 0 0 1 12 2a8 8 0 0 1 8 8c0 6-8 10-8 10z"></path>
-    <circle cx="12" cy="10" r="3"></circle>
-  </svg>
-);
 
 
 // Styled Components
