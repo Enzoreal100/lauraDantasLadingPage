@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import CTAButton from './CTAButton';
 import CTAForms from './CTAForms';
+import heroBackground from '../assets/hero.jpg'; 
 
 const HeroContainer = styled.section`
   position: relative;
@@ -12,7 +13,7 @@ const HeroContainer = styled.section`
   align-items: center;
   color: white;
   text-align: center;
-  background-image: url('../assets/hero.jpg');
+  background-image: url(${heroBackground});
   background-size: cover;
   background-position: center;
 
