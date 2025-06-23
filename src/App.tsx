@@ -6,6 +6,7 @@ import SpecialitiesSection from "./components/SpecialitiesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import FAQSection from "./components/FAQSection";
 import ContactSection from "./components/ContactSection";
+import ApproachSection from "./components/ApproachSection";
 
 const Skeleton = styled.div`
   width: 100%;
@@ -18,6 +19,7 @@ function App() {
       <HeroSection/>
       <AboutSection/>
       <SpecialitiesSection/>
+      <ApproachSection/>
       <TestimonialsSection/>
       <FAQSection/>
       <ContactSection/>
