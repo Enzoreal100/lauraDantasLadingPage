@@ -65,7 +65,7 @@ const AboutSection: React.FC = () => {
         </Description>
       </TextContent>
       <ImageContainer>
-        <AboutImage src="./src/assets/about.jpg" alt="About Us" /> {/* Replace with your image source */}
+        <AboutImage src="../assets/about.jpg" alt="About Us" /> {/* Replace with your image source */}
       </ImageContainer>
     </AboutSectionContainer>
   );

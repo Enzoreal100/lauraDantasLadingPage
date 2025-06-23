@@ -12,7 +12,7 @@ const HeroContainer = styled.section`
   align-items: center;
   color: white;
   text-align: center;
-  background-image: url('./src/assets/hero.jpg');
+  background-image: url('../assets/hero.jpg');
   background-size: cover;
   background-position: center;
 
