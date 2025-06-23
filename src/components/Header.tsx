@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import CTAButton from './CTAButton';
 import COLOR from '../constants/colors.constants';
+import logoImage from '../assets/logo.png'; // Importe sua logo aqui
 
 // Styled Components
 
@@ -188,7 +189,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LogoTitleWrapper> 
-        <Logo src="../assets/logo-removebg-preview.png" alt="Logo" />
+        <Logo src={logoImage} alt="Logo" />
         <Title>Laura Dantas</Title>
       </LogoTitleWrapper>
 

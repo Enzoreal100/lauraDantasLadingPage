@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import aboutImage from '../assets/about.jpg'; // Import your image here
 
 const AboutSectionContainer = styled.section`
   display: flex;
@@ -65,7 +66,7 @@ const AboutSection: React.FC = () => {
         </Description>
       </TextContent>
       <ImageContainer>
-        <AboutImage src="../assets/about.jpg" alt="About Us" /> {/* Replace with your image source */}
+        <AboutImage src={aboutImage} alt="About Us" /> {/* Replace with your image source */}
       </ImageContainer>
     </AboutSectionContainer>
   );
