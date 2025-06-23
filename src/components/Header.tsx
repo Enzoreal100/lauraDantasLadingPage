@@ -188,7 +188,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LogoTitleWrapper> 
-        <Logo src="./src/assets/logo-removebg-preview.png" alt="Logo" />
+        <Logo src="../assets/logo-removebg-preview.png" alt="Logo" />
         <Title>Laura Dantas</Title>
       </LogoTitleWrapper>
 
