@@ -16,6 +16,7 @@ const HeroContainer = styled.section`
   background-image: url(${heroBackground});
   background-size: cover;
   background-position: center;
+  padding-top: 80px;
 
   &::before {
     content: '';
