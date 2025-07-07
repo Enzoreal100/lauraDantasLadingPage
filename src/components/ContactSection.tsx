@@ -84,12 +84,7 @@ const ContactSection: React.FC = () => {
         <CTAForms text= "Formulário" onClick={() => alert('Forms clicked!')} />
       </ButtonsWrapper>
 
-      {/* Mapa de Localização - Mantido como uma visualização de endereço */}
       <MapWrapper>
-        {/* Você pode incorporar um mapa do Google Maps aqui.
-            Vá ao Google Maps, pesquise seu endereço, clique em "Compartilhar",
-            depois "Incorporar um mapa" e copie o iframe.
-        */}
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.331602078696!2d-43.27552912443095!3d-22.93796857922254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997d21b4b9f291%3A0x5e0f7f3f2d2b2b2b!2sRua%20Dias%20da%20Cruz%2C%20100%20-%20M%C3%A9ier%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020720-012%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" // Substitua pelo iframe real do Google Maps
           allowFullScreen={false}
