@@ -8,6 +8,8 @@ import FAQSection from "./components/FAQSection";
 import ContactSection from "./components/ContactSection";
 import ApproachSection from "./components/ApproachSection";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import EnterprisesSection from "./components/EnterprisesSection";
+import NewsletterSection from "./components/NewsletterSection";
 
 const Skeleton = styled.div`
   width: 100%;
@@ -31,6 +33,18 @@ function App() {
 
       <Slide direction="right" triggerOnce fraction={0.5}>
         <ApproachSection/>
+      </Slide>
+
+      <Slide direction="up" triggerOnce fraction={0.5}>
+        <NewsletterSection 
+          title='Conteúdos gratuitos e atualizações'
+          text='Receber conteúdos'
+          subtitle='Quer receber conteúdos exclusivos sobre saúde mental, dicas práticas de bem-estar e novidades sobre minha atuação diretamente no seu e-mail?'  
+        />
+      </Slide>
+
+      <Slide direction="up" triggerOnce fraction={0.5}>
+        <EnterprisesSection/>
       </Slide>
 
       <Zoom triggerOnce fraction={0.5}>

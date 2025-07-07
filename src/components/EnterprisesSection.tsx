@@ -1,15 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import COLOR from '../constants/colors.constants';
-import CTAButton from './CTAButton';
-import CTAForms from './CTAForms';
-import NewsletterSection from './NewsletterSection';
-import { Slide } from 'react-awesome-reveal';
+import { StyledCTAButton } from './NewsletterSection';
 
 
 // Styled Components
 export const ApproachSectionContainer = styled.section`
-  padding: 60px 20px 0  20px;
   background-color: ${COLOR.BG.PRIMARY};
   text-align: center;
   scroll-margin-top: 80px; /* Para o link do header fixo */
@@ -85,66 +81,66 @@ export const HighlightItem = styled.div`
   }
 `;
 
-const CTAbuttonContainer = styled.div`
+const StyledCTAButtonContainer = styled.div`
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;`
-;
+`;
 
 
-// Ícones (você pode substituir por ícones de uma biblioteca como react-icons)
-const TCCTherapyIcon = () => (
+const RiskIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"></path>
-    <path d="M12 8v4l3 3"></path>
+    <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"></path>
+    <line x1="12" y1="9" x2="12" y2="13"></line>
+    <line x1="12" y1="17" x2="12.01" y2="17"></line>
   </svg>
-); // Exemplo de ícone de relógio ou conhecimento
+); // Ícone de alerta/risco
 
-const ListeningIcon = () => (
+const BurnoutPreventionIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M14 17h6m-3 3v-6m0 6a3 3 0 110-6 3 3 0 010 6zM4 14a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v7z"></path>
+    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+    <polyline points="22 4 12 14.01 9 11.01"></polyline>
   </svg>
-); // Exemplo de ícone de microfone ou escuta
+); // Ícone de check/progresso dentro de um círculo
 
-const ConfidentialityIcon = () => (
+const EmotionalIntelIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+    <path d="M17.8 20.35a2 2 0 001.2-1.39C19.7 17.56 21 15 21 12c0-3.37-2.73-6-6-6-3.37 0-6 2.63-6 6 0 2.22 1 4.3 2.7 5.96"></path>
+    <circle cx="12" cy="12" r="10"></circle>
   </svg>
-); // Exemplo de ícone de cadeado
-
-const ApproachSection: React.FC = () => {
+);
+const EnterprisesSection: React.FC = () => {
   return (
-    <ApproachSectionContainer id="approach">
-      <SectionTitle>Agende sua primeira conversa</SectionTitle>
+    <ApproachSectionContainer>
+      <SectionTitle>Empresas: saúde emocional também é estratégia</SectionTitle>
       <SectionSubtitle>
-        Atendimento com escuta humanizada, técnica e objetiva. Vamos conversar?
+        Consultorias, palestras e programas personalizados sobre saúde mental no ambiente corporativo.
       </SectionSubtitle>
-
       <ContentWrapper>
         <HighlightGrid>
           <HighlightItem>
-            <TCCTherapyIcon />
-            <h4>Atendimentos Online para todo o Brasil </h4>
+            <RiskIcon />
+            <h4>NR1 – Riscos psicossociais</h4>
           </HighlightItem>
           <HighlightItem>
-            <ListeningIcon />
-            <h4>Horários flexíveis</h4>
+            <BurnoutPreventionIcon />
+            <h4>Prevenção de burnout e absenteísmo</h4>
           </HighlightItem>
           <HighlightItem>
-            <ConfidentialityIcon />
-            <h4>Primeiro contato sem compromisso</h4>
+            <EmotionalIntelIcon />
+            <h4>Promoção da inteligência emocional nas equipes</h4>
           </HighlightItem>
         </HighlightGrid>
       </ContentWrapper>
-      <CTAbuttonContainer>
-        <CTAButton text="Whatsapp" onClick={() => alert('Button clicked!')}/>
-        <CTAForms text= "Formulário" onClick={() => alert('Forms clicked!')}/>
-      </CTAbuttonContainer>
+      <StyledCTAButtonContainer>
+        <StyledCTAButton 
+          text={"Solicitar proposta"}
+          href="LINK_PARA_SUA_PAGINA_DE_CADASTRO_EMAIL_MARKETING_OU_FORMULARIO_GOOGLE" 
+        />
+      </StyledCTAButtonContainer>
     </ApproachSectionContainer>
   );
 };
 
-export default ApproachSection;
+export default EnterprisesSection;

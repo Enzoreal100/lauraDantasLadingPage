@@ -8,7 +8,6 @@ import COLOR from '../constants/colors.constants';
 // Define the structure for a speciality
 interface Speciality {
   id: number;
-  name: string;
   cards: CardData[];
 }
 
@@ -108,34 +107,43 @@ const Card: React.FC<CardProps> = ({ title, description }) => {
 const specialities: Speciality[] = [
   {
     id: 1,
-    name: 'Psicopatologia', // Mudei o nome para ser mais relevante
     cards: [
       { id: 1,
-        title: 'Transtornos do Humor: Depressão e Bipolaridade',
-        description: 'Apoio clínico especializado no diagnóstico e tratamento de Transtorno Bipolar e Depressão, visando a estabilização emocional e a melhoria da qualidade de vida.',
+        title: 'Depressão',
+        description: 'Apoio especializado para o tratamento da depressão, buscando a recuperação do bem-estar e da qualidade de vida.',
       },
       { id: 2,
-        title: 'Pós-Psicopatologia: Reintegração e Manutenção',
-        description: 'Suporte contínuo após o tratamento de condições psicopatológicas, focando na reintegração social, familiar e profissional, e na prevenção de recaídas.',
+        title: 'Transtornos de Ansiedade',
+        description: 'Tratamento para diversas formas de ansiedade, desenvolvendo estratégias para lidar com preocupações, medos e ataques de pânico.',
       },
       {
         id: 3,
-        title: 'Transição de Carreira: Direção e Resiliência',
-        description: 'Aconselhamento psicológico para indivíduos em momentos de mudança profissional, desenvolvendo estratégias para lidar com desafios, ansiedade e tomada de decisões.',
+        title: 'Transtorno Bipolar',
+        description: 'Acompanhamento contínuo para o manejo das oscilações de humor, promovendo estabilidade e autoconhecimento.',
       },
       {
         id: 4,
-        title: 'Saúde Mental Corporativa: Treinamento NR1',
-        description: 'Consultoria e treinamento empresarial com foco na saúde mental no ambiente de trabalho, abordando aspectos da NR1 para promover um ambiente laboral saudável e produtivo.'
+        title: 'Transtorno do Jogo (Ludopatia)',
+        description: 'Intervenção focada no vício em jogos, auxiliando na retomada do controle e na reconstrução de uma vida equilibrada.'
       },
       // Adicione mais cards para ver o efeito infinito claramente
       { id: 5,
-        title: 'Terapia Individual',
-        description: 'Acompanhamento personalizado para diversos desafios emocionais e de desenvolvimento pessoal.'
+        title: 'Saúde Mental no Ambiente Corporativo',
+        description: 'Com MBA em Educação Corporativa pela FIA/USP, ofereço soluções para promover um ambiente de trabalho mais saudável e produtivo.'
       },
       { id: 6,
-        title: 'Avaliação Psicológica',
-        description: 'Diagnóstico e compreensão aprofundada de questões cognitivas e comportamentais.'
+        title: 'Palestras Temáticas',
+        description: 'Leve para sua empresa discussões relevantes sobre saúde mental, bem-estar, gestão do estresse e muito mais.'
+      },
+      {
+        id: 7,
+        title: 'Consultorias Personalizadas',
+        description: 'Análise e desenvolvimento de estratégias customizadas para aprimorar a saúde mental e o clima organizacional da sua equipe.'
+      },
+      {
+        id: 8,
+        title: 'Treinamentos Especializados',
+        description: 'Capacitação com foco na prevenção de riscos psicossociais e atendimento à NR1, fortalecendo a segurança e o bem-estar dos colaboradores.'
       }
     ],
   },
