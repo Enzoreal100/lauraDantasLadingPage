@@ -3,10 +3,8 @@ import styled from 'styled-components';
 import CTAButton from './CTAButton';
 import COLOR from '../constants/colors.constants';
 import logoImage from '../assets/logo.png'; // Importe sua logo aqui
+import CTAForms from './CTAForms';
 
-// Styled Components
-
-// Header Container - Ajustado para layout responsivo
 export const HeaderContainer = styled.header`
   background-color: ${COLOR.BG.PRIMARY};
   padding: 20px;
@@ -177,6 +175,14 @@ export const MobileMenu = styled.div<{ open: boolean }>`
   }
 `;
 
+const StyledCTAButton = styled(CTAButton)`
+  margin-left: 0; 
+`;
+
+const StyledCTAForms = styled(CTAForms)`
+  margin-right: 0;
+`;
+
 
 // Componente Header
 const Header = () => {
@@ -198,10 +204,11 @@ const Header = () => {
         <NavLink href="#home">Home</NavLink>
         <NavLink href="#about">Sobre</NavLink>
         <NavLink href="#specialities">Especialidades</NavLink>
-        <NavLink href="#approach">Abordagem</NavLink>
+        {/* <NavLink href="#schedule">Agendar</NavLink> */}
+        <NavLink href='#enterprises'>Empresas</NavLink>
         <NavLink href="#FAQ">FAQ</NavLink>
-        <NavLink href="#contact">Contato</NavLink>
-        <CTAButton text="Whatsapp" href="#get-started" className="cta-button" />
+        <CTAButton />
+        <CTAForms />
       </Nav>
 
       {/* Botão Hambúrguer (só visível no mobile) */}
@@ -218,8 +225,8 @@ const Header = () => {
         <NavLink href="#specialities" onClick={toggleMenu}>Especialidades</NavLink>
         <NavLink href="#approach" onClick={toggleMenu}>Abordagem</NavLink>
         <NavLink href="#FAQ" onClick={toggleMenu}>FAQ</NavLink>
-        <NavLink href="#contact" onClick={toggleMenu}>Contato</NavLink>
-        <CTAButton text="Whatsapp" href="#get-started" onClick={toggleMenu} className="cta-button" />
+        <StyledCTAButton />
+        <StyledCTAForms />
       </MobileMenu>
     </HeaderContainer>
   );

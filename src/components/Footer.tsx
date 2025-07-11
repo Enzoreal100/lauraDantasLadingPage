@@ -37,6 +37,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterText>Guaracylaura Sylvestre Dantas</FooterText>
       <FooterText>CRP: 05/75363</FooterText>
+      <FooterText>lauradantas.psico@gmail.com</FooterText>
       <FooterSubtext>Developed by Enzo Real © 2025 All rights reserved</FooterSubtext>
     </FooterContainer>
   );

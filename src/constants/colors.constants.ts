@@ -8,16 +8,17 @@ const COLOR = {
     TITLE: "#333",
     SUBTITLE: "#555",
     HOVER: "#00bbff",
+    INVERTED: "#f9f9f9",
   },
   FOOTER: {
     TEXT: "#f0f0f0",
     SUBTEXT: "#505353"
   },
   CTABUTTON: {
-    BG: "#128C7E",
-    BG_HOVER: "#0E7A69",
-    BG_FORMS: " #f0f2f5",
-    BG_FORMS_HOVER: "#f3f2f5"
+    BG_FORMS: "#427091ff",
+    BG_FORMS_HOVER: "#2b6a97ff",
+    BG: "#f0f2f5",
+    BG_HOVER: "#f1f2f093"
   },
   BORDER_COLOR: "#eee",
 

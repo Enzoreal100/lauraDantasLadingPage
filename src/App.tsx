@@ -6,7 +6,7 @@ import SpecialitiesSection from "./components/SpecialitiesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import FAQSection from "./components/FAQSection";
 import ContactSection from "./components/ContactSection";
-import ApproachSection from "./components/ApproachSection";
+import ScheduleSection from "./components/ScheduleSection";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import EnterprisesSection from "./components/EnterprisesSection";
 import NewsletterSection from "./components/NewsletterSection";
@@ -32,7 +32,7 @@ function App() {
       </Fade>
 
       <Slide direction="right" triggerOnce fraction={0.5}>
-        <ApproachSection/>
+        <ScheduleSection/>
       </Slide>
 
       <Slide direction="up" triggerOnce fraction={0.5}>
@@ -47,9 +47,9 @@ function App() {
         <EnterprisesSection/>
       </Slide>
 
-      <Zoom triggerOnce fraction={0.5}>
+      {/* <Zoom triggerOnce fraction={0.5}>
         <TestimonialsSection/>
-      </Zoom>
+      </Zoom> */}
 
       <Fade delay={200} triggerOnce fraction={0.5}> 
         <FAQSection/>
