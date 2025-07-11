@@ -135,8 +135,6 @@ const EnterprisesSection: React.FC = () => {
       </ContentWrapper>
       <StyledCTAButtonContainer>
         <StyledCTAButton 
-          text={"Solicitar proposta"}
-          href="LINK_PARA_SUA_PAGINA_DE_CADASTRO_EMAIL_MARKETING_OU_FORMULARIO_GOOGLE" 
         />
       </StyledCTAButtonContainer>
     </ApproachSectionContainer>
