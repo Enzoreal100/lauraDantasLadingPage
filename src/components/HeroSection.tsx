@@ -52,8 +52,8 @@ const HeroSection: React.FC = () => {
       <HeroContent>
         <HeroTitle>Transforme sua saúde mental com ciência e empatia</HeroTitle>
         <HeroSubtitle>Terapia Cognitivo-Comportamental | Neurociência | Especialista em Transtornos do Humor e do Comportamento</HeroSubtitle>
-        <CTAButton text="Whatsapp" onClick={() => alert('Button clicked!')} />
-        <CTAForms text= "Formulário" onClick={() => alert('Forms clicked!')} />
+        <CTAButton/>
+        <CTAForms />
       </HeroContent>
     </HeroContainer>
   );

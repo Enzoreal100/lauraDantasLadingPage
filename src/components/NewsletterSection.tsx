@@ -9,15 +9,15 @@ interface NewsletterSectionProps {
   text: string;
   
 };
-// Styled Components
+
 export const NewsletterSectionContainer = styled.section`
   background-color: ${COLOR.BG.SECONDARY};
   text-align: center;
   scroll-margin-top: 80px;
-  padding: 100px;
+  padding: 80px;
 
   @media (min-width: 768px) {
-    padding: 90px 0 0 0;
+    padding: 90px 0 80px 0;
   }
 `;
 
@@ -41,22 +41,19 @@ export const SectionSubtitle = styled.p`
 
 export const StyledCTAButton = styled(CTAForms)`
   max-width: 300px;
-  margin: 20px;
-  padding: 15px 30px;
+  margin-top: 20px;
+  margin-bottom: 800px;
 `;
 
 // Componente Principal da Seção de Newsletter
-const NewsletterSection: React.FC<NewsletterSectionProps > = ({ title, subtitle, text }) => {
+const NewsletterSection: React.FC<NewsletterSectionProps > = ({ title, subtitle }) => {
   return (
     <NewsletterSectionContainer>
       <SectionTitle>{title}</SectionTitle>
       <SectionSubtitle>
         {subtitle}
       </SectionSubtitle>
-      <StyledCTAButton 
-        text={text}
-        href="LINK_PARA_SUA_PAGINA_DE_CADASTRO_EMAIL_MARKETING_OU_FORMULARIO_GOOGLE" 
-      />
+      <StyledCTAButton />
       
     </NewsletterSectionContainer>
   );

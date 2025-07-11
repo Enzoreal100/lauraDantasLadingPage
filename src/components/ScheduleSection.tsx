@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import COLOR from '../constants/colors.constants';
 import CTAButton from './CTAButton';
 import CTAForms from './CTAForms';
-import NewsletterSection from './NewsletterSection';
-import { Slide } from 'react-awesome-reveal';
 
 
 // Styled Components
@@ -115,9 +113,9 @@ const ConfidentialityIcon = () => (
   </svg>
 ); // Exemplo de ícone de cadeado
 
-const ApproachSection: React.FC = () => {
+const ScheduleSection: React.FC = () => {
   return (
-    <ApproachSectionContainer id="approach">
+    <ApproachSectionContainer id="schedule">
       <SectionTitle>Agende sua primeira conversa</SectionTitle>
       <SectionSubtitle>
         Atendimento com escuta humanizada, técnica e objetiva. Vamos conversar?
@@ -140,11 +138,11 @@ const ApproachSection: React.FC = () => {
         </HighlightGrid>
       </ContentWrapper>
       <CTAbuttonContainer>
-        <CTAButton text="Whatsapp" onClick={() => alert('Button clicked!')}/>
-        <CTAForms text= "Formulário" onClick={() => alert('Forms clicked!')}/>
+        <CTAButton />
+        <CTAForms />
       </CTAbuttonContainer>
     </ApproachSectionContainer>
   );
 };
 
-export default ApproachSection;
+export default ScheduleSection;

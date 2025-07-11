@@ -1,18 +1,11 @@
 import styled from 'styled-components';
 import COLOR from '../constants/colors.constants';
 
-interface CTAButtonProps {
-  text: string;
-  onClick?: () => void;
-  href?: string; 
-  className?: string;
-}
-
 const StyledButton = styled.button`
   background-color: ${COLOR.CTABUTTON.BG};
-  color: white;
+  color: ${COLOR.TEXT.TITLE};
   font-weight: bold;
-  padding: 0.7rem 1.5rem; 
+  padding: 0.7rem 2rem; 
   border-radius: 2.5rem; // rounded
   border: none;
   cursor: pointer;
@@ -31,21 +24,13 @@ const StyledButton = styled.button`
   }
 `;
 
-const CTAButton: React.FC<CTAButtonProps> = ({ text, onClick, href, className }) => {
-  if (href) {
-    return (
-      <a href={href} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-        <StyledButton as="span" className={className} onClick={onClick}> {/* Usar 'as="span"' para evitar aninhamento de botões e permitir onClick se necessário */}
-          {text}
-        </StyledButton>
-      </a>
-    );
-  }
-
+const CTAButton: React.FC = () => {
   return (
-    <StyledButton className={className} onClick={onClick}>
-      {text}
-    </StyledButton>
+    <a href='#contact' style={{ textDecoration: 'none' }}>
+      <StyledButton as="span">
+        Contato
+      </StyledButton>
+    </a>
   );
 };
 

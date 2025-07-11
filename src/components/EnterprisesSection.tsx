@@ -112,7 +112,7 @@ const EmotionalIntelIcon = () => (
 );
 const EnterprisesSection: React.FC = () => {
   return (
-    <ApproachSectionContainer>
+    <ApproachSectionContainer id='enterprises'>
       <SectionTitle>Empresas: saúde emocional também é estratégia</SectionTitle>
       <SectionSubtitle>
         Consultorias, palestras e programas personalizados sobre saúde mental no ambiente corporativo.
