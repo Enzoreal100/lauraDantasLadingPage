@@ -3,11 +3,10 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import SpecialitiesSection from "./components/SpecialitiesSection";
-import TestimonialsSection from "./components/TestimonialsSection";
 import FAQSection from "./components/FAQSection";
 import ContactSection from "./components/ContactSection";
 import ScheduleSection from "./components/ScheduleSection";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import EnterprisesSection from "./components/EnterprisesSection";
 import NewsletterSection from "./components/NewsletterSection";
 
