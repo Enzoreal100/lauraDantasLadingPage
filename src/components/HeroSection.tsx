@@ -2,8 +2,10 @@ import styled from 'styled-components';
 import CTAButton from './CTAButton';
 import CTAForms from './CTAForms';
 import heroBackground from '../assets/hero.jpg'; 
+import heroBackgroundMobile from '../assets/hero-mobile.jpg';
 
 const HeroContainer = styled.section`
+  background-color: #a4a5a4ff;
   position: relative;
   width: 100%;
   height: 70vh;
@@ -15,8 +17,21 @@ const HeroContainer = styled.section`
   text-align: center;
   background-image: url(${heroBackground});
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  padding-top: 80px;
+  padding: 80px 20px 20px 20px;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    height: 41vh;
+    background-image: url(${heroBackgroundMobile}); 
+    background-size: 50vh auto;
+    background-position: left bottom;
+    /* Exemplo: ajustando o tamanho de um H1 dentro do Hero */
+    h1 {
+      font-size: 2rem; /* Tamanho maior para desktop (fora da media query) */
+    }
+  }
 
   &::before {
     content: '';
@@ -33,17 +48,24 @@ const HeroContent = styled.div`
   position: relative;
   z-index: 1;
   max-width: 800px;
-  padding: 20px;
+  padding: 1.25rem;
+  margin-left: 19rem;
+
+  @media (max-width: 1024px) { // ou 768px, dependendo do seu design
+  margin-left: 10rem;
+  margin-right: auto;
+  }
 `;
+
 
 const HeroTitle = styled.h1`
   font-size: 2.8em;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 `;
 
 const HeroSubtitle = styled.p`
   font-size: 1.1em;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 `;
 
 const HeroSection: React.FC = () => {
