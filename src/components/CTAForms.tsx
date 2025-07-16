@@ -22,7 +22,7 @@ const StyledButton = styled.button`
 
 const CTAForms: React.FC = () => {
     return (
-    <a href='formulario' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+    <a href='https://forms.gle/JaSy6kYVuLEwBB8X9' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
       <StyledButton as="span">
         Formulário
       </StyledButton>
