@@ -175,15 +175,6 @@ export const MobileMenu = styled.div<{ open: boolean }>`
   }
 `;
 
-const StyledCTAButton = styled(CTAButton)`
-  margin-left: 0; 
-`;
-
-const StyledCTAForms = styled(CTAForms)`
-  margin-right: 0;
-`;
-
-
 // Componente Header
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -204,7 +195,6 @@ const Header = () => {
         <NavLink href="#home">Home</NavLink>
         <NavLink href="#about">Sobre</NavLink>
         <NavLink href="#specialities">Especialidades</NavLink>
-        {/* <NavLink href="#schedule">Agendar</NavLink> */}
         <NavLink href='#enterprises'>Empresas</NavLink>
         <NavLink href="#FAQ">FAQ</NavLink>
         <CTAButton />
@@ -220,13 +210,13 @@ const Header = () => {
 
       {/* Menu Mobile (visível apenas quando 'open' é true) */}
       <MobileMenu open={menuOpen}>
-        <NavLink href="#home" onClick={toggleMenu}>Home</NavLink>
-        <NavLink href="#about" onClick={toggleMenu}>Sobre</NavLink>
-        <NavLink href="#specialities" onClick={toggleMenu}>Especialidades</NavLink>
-        <NavLink href="#approach" onClick={toggleMenu}>Abordagem</NavLink>
-        <NavLink href="#FAQ" onClick={toggleMenu}>FAQ</NavLink>
-        <StyledCTAButton />
-        <StyledCTAForms />
+        <NavLink href="#home">Home</NavLink>
+        <NavLink href="#about">Sobre</NavLink>
+        <NavLink href="#specialities">Especialidades</NavLink>
+        <NavLink href='#enterprises'>Empresas</NavLink>
+        <NavLink href="#FAQ">FAQ</NavLink>
+        <CTAButton />
+        <CTAForms />
       </MobileMenu>
     </HeaderContainer>
   );
