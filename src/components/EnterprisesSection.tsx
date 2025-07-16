@@ -9,9 +9,10 @@ export const ApproachSectionContainer = styled.section`
   background-color: ${COLOR.BG.PRIMARY};
   text-align: center;
   scroll-margin-top: 80px; /* Para o link do header fixo */
+  margin: 80px 20px;
 
-  @media (min-width: 768px) {
-    padding: 80px 40px;
+  @media (max-width: 768px) {
+    padding: 0 20px;
   }
 `;
 

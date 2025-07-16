@@ -22,6 +22,10 @@ const StyledButton = styled.button`
   &.${(props) => props.className} {
     /* Estilos adicionais podem ser aplicados aqui se className for passado */
   }
+
+  @media (max-width: 1024px) { // ou 768px, dependendo do seu design
+    margin: 0.3rem auto; // Centraliza o botão em telas menores
+  }
 `;
 
 const CTAButton: React.FC = () => {

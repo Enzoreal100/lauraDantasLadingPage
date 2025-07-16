@@ -16,8 +16,9 @@ export const NewsletterSectionContainer = styled.section`
   scroll-margin-top: 80px;
   padding: 80px;
 
-  @media (min-width: 768px) {
-    padding: 90px 0 80px 0;
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+    margin-top: 80px;
   }
 `;
 

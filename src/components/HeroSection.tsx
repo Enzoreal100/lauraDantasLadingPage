@@ -23,14 +23,11 @@ const HeroContainer = styled.section`
   box-sizing: border-box;
 
   @media (max-width: 768px) {
-    height: 41vh;
+    height: 50vh;
     background-image: url(${heroBackgroundMobile}); 
-    background-size: 50vh auto;
+    background-size: 60vh auto;
     background-position: left bottom;
     /* Exemplo: ajustando o tamanho de um H1 dentro do Hero */
-    h1 {
-      font-size: 2rem; /* Tamanho maior para desktop (fora da media query) */
-    }
   }
 
   &::before {
@@ -51,21 +48,24 @@ const HeroContent = styled.div`
   padding: 1.25rem;
   margin-left: 19rem;
 
-  @media (max-width: 1024px) { // ou 768px, dependendo do seu design
-  margin-left: 10rem;
-  margin-right: auto;
+  @media (max-width: 768px) {
+    margin-left: 8rem;
+    margin-right: auto;
+    margin-top: 2rem;
   }
 `;
 
 
 const HeroTitle = styled.h1`
-  font-size: 2.8em;
-  margin-bottom: 1.25rem;
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    font-size: 1.5em; /* Ajuste para telas menores */
 `;
 
 const HeroSubtitle = styled.p`
   font-size: 1.1em;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1rem;
 `;
 
 const HeroSection: React.FC = () => {

@@ -18,6 +18,10 @@ const StyledButton = styled.button`
   &:hover {
     background-color: ${COLOR.CTABUTTON.BG_FORMS_HOVER}; 
   }
+
+  @media (max-width: 1024px) {
+    margin-left: 0; 
+  }
 `;
 
 const CTAForms: React.FC = () => {

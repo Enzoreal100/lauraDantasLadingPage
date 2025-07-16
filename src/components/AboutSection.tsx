@@ -53,7 +53,7 @@ const Description = styled.p`
 
 const ImageContainer = styled.div`
   flex: 1;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,14 +68,14 @@ const AboutImage = styled.img`
 
 const VideoContainer = styled.div`
   display: flex;
-  margin: 80px;
+  margin: 80px 20px;
   justify-content: center;
   align-items: center;
   height: 600px;
   flex-direction: column;
 
   @media (max-width: 768px) {
-    height: 300px;
+    height: 45rem;
   }
 `;
 
