@@ -38,7 +38,7 @@ const HeroContainer = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add an overlay for better text readability */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: Add an overlay for better text readability */
   }
 `;
 
