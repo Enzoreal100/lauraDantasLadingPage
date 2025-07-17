@@ -29,6 +29,7 @@ const HeroContainer = styled.section`
     background-position: left bottom;
     /* Exemplo: ajustando o tamanho de um H1 dentro do Hero */
   }
+  
 
   &::before {
     content: '';
@@ -49,10 +50,13 @@ const HeroContent = styled.div`
   margin-left: 19rem;
 
   @media (max-width: 1024px) {
-    margin-left: 8rem;
+    padding: 0;
+    max-width: 1000px;
+    margin-left: 6rem;
     margin-right: auto;
     margin-top: 2rem;
   }
+
 `;
 
 
