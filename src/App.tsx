@@ -18,23 +18,23 @@ function App() {
   return (
     <Skeleton>
       <Header/>
-      <Fade triggerOnce fraction={0.1} duration={1000}>
+      <Fade triggerOnce duration={1000}>
         <HeroSection/>
       </Fade>
 
-      <Slide direction="left" triggerOnce fraction={0.5}>
+      <Slide direction="left" triggerOnce>
         <AboutSection/>
       </Slide>
 
-      <Fade duration={1500} triggerOnce fraction={0.3}> 
+      <Fade duration={1500} triggerOnce> 
         <SpecialitiesSection/>
       </Fade>
 
-      <Slide direction="right" triggerOnce fraction={0.5}>
+      <Slide direction="right" triggerOnce>
         <ScheduleSection/>
       </Slide>
 
-      <Slide direction="up" triggerOnce fraction={0.5}>
+      <Slide direction="up" triggerOnce>
         <NewsletterSection 
           title='Conteúdos gratuitos e atualizações'
           text='Receber conteúdos'
@@ -42,7 +42,7 @@ function App() {
         />
       </Slide>
 
-      <Slide direction="up" triggerOnce fraction={0.5}>
+      <Slide direction="up" triggerOnce>
         <EnterprisesSection/>
       </Slide>
 
@@ -50,11 +50,11 @@ function App() {
         <TestimonialsSection/>
       </Zoom> */}
 
-      <Fade delay={200} triggerOnce fraction={0.5}> 
+      <Fade delay={200} triggerOnce> 
         <FAQSection/>
       </Fade>
 
-      <Slide direction="up" triggerOnce fraction={0.5}> 
+      <Slide direction="up" triggerOnce> 
         <ContactSection/>
       </Slide>
     </Skeleton>
