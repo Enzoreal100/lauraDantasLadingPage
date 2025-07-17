@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar o header */
   z-index: 1000; /* Garante que o header fique sobre outros conteúdos */
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     padding: 20px 40px;
     position: relative;
   }
@@ -38,7 +38,7 @@ export const Title = styled.h1`
   margin: 0; /* Remove margens padrão */
   display: none; /* Oculta no mobile (a logo será a única visível na esquerda) */
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: block; /* Exibe no desktop */
     text-align: left;
     margin-left: 15px; /* Espaçamento entre a logo e o título no desktop */
@@ -52,7 +52,7 @@ export const LogoTitleWrapper = styled.div`
 
   /* No mobile, este wrapper se comporta como um item flex normal (horizontal)
      Mas o Title está com display:none no mobile, então só a Logo aparece. */
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     /* No desktop, já está configurado para flex e alinhar */
   }
 `;
@@ -61,7 +61,7 @@ export const LogoTitleWrapper = styled.div`
 export const Nav = styled.nav`
   display: none; /* Oculta no mobile */
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: flex; /* Exibe no desktop */
     flex-direction: row;
     gap: 15px;
@@ -135,7 +135,7 @@ export const HamburgerButton = styled.button`
     outline: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: none; /* Oculta no desktop */
   }
 `;
@@ -170,7 +170,7 @@ export const MobileMenu = styled.div<{ open: boolean }>`
   }
 
   /* Oculta o MobileMenu no desktop */
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 `;

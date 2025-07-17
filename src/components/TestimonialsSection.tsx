@@ -56,7 +56,7 @@ export const TestimonialsSectionContainer = styled.section`
   background-color: ${COLOR.BG.SECONDARY || '#f8f8f8'}; /* Use uma cor de fundo adequada */
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     padding: 80px 40px;
   }
 `;

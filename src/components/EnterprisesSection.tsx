@@ -11,7 +11,7 @@ export const ApproachSectionContainer = styled.section`
   scroll-margin-top: 80px; /* Para o link do header fixo */
   margin: 80px 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     padding: 0 20px;
   }
 `;

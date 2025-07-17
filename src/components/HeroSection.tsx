@@ -22,7 +22,7 @@ const HeroContainer = styled.section`
   padding: 80px 20px 20px 20px;
   box-sizing: border-box;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     height: 50vh;
     background-image: url(${heroBackgroundMobile}); 
     background-size: 60vh auto;
@@ -48,7 +48,7 @@ const HeroContent = styled.div`
   padding: 1.25rem;
   margin-left: 19rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin-left: 8rem;
     margin-right: auto;
     margin-top: 2rem;
@@ -59,7 +59,7 @@ const HeroContent = styled.div`
 const HeroTitle = styled.h1`
   font-size: 2.5em;
   margin-bottom: 1rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 1.5em; /* Ajuste para telas menores */
 `;
 

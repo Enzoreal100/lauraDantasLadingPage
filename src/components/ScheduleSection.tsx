@@ -7,13 +7,13 @@ import CTAForms from './CTAForms';
 
 // Styled Components
 export const ApproachSectionContainer = styled.section`
-  padding: 60px 20px 0  20px;
   background-color: ${COLOR.BG.PRIMARY};
   text-align: center;
   scroll-margin-top: 80px; /* Para o link do header fixo */
+  margin: 80px 20px;
 
-  @media (min-width: 768px) {
-    padding: 80px 40px;
+  @media (max-width: 1024px) {
+    padding: 0 20px;
   }
 `;
 

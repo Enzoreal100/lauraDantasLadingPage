@@ -39,7 +39,7 @@ export const ButtonsWrapper = styled.div`
   margin-left: auto; /* Centraliza a wrapper de botões */
   margin-right: auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     flex-direction: row; /* Coloca lado a lado no desktop */
     justify-content: center;
     max-width: 500px; /* Aumenta a largura máxima para dois botões lado a lado */

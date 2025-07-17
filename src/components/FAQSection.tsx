@@ -50,7 +50,7 @@ export const FAQSectionContainer = styled.section`
   text-align: center;
   scroll-margin-top: 80px; /* Importante para o scroll do link do header fixo */
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     padding: 80px 40px;
   }
 `;

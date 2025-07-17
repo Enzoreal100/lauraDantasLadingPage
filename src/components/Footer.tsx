@@ -8,7 +8,7 @@ const FooterContainer = styled.footer`
   font-family: Arial, sans-serif;
   color: #333;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     padding: 15px;
   }
 `;
@@ -17,7 +17,7 @@ const FooterText = styled.p`
   margin: 5px 0;
   font-size: 1rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 0.9rem;
   }
 `;
@@ -27,7 +27,7 @@ const FooterSubtext = styled.p`
   font-size: 0.9rem;
   color: ${COLOR.FOOTER.SUBTEXT};
   
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 0.8rem;
   }
 `;

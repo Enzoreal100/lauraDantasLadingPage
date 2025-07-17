@@ -18,7 +18,7 @@ const AboutSectionContent = styled.section`
   align-items: center;
   padding: 40px 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     flex-direction: row;
     justify-content: center;
     padding: 80px 40px;
@@ -31,7 +31,7 @@ const TextContent = styled.div`
   margin-bottom: 30px;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     margin-right: 40px;
     margin-bottom: 0;
     text-align: left;
@@ -74,7 +74,7 @@ const VideoContainer = styled.div`
   height: 600px;
   flex-direction: column;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     height: 45rem;
   }
 `;
