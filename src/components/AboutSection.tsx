@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import aboutImage from '../assets/about.jpg';
+import aboutImage from '../assets/about.png';
 import aboutVideo from '../assets/video-about.mp4';
 import aboutVideoCover from '../assets/video-about-cover.jpg';
 import { SectionTitle } from './ScheduleSection';
