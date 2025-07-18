@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import COLOR from '../constants/colors.constants';
+import contactsImage from '../assets/contacts.jpg';
 
 // Styled Components
 export const ContactSectionContainer = styled.section`
@@ -8,10 +9,26 @@ export const ContactSectionContainer = styled.section`
   background-color: ${COLOR.BG.PRIMARY || '#f8f8f8'};
   text-align: center;
   scroll-margin-top: 80px; /* Para o link do header fixo */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem; /* Espaçamento entre conteúdo e imagem */
 
-  @media (min-width: 768px) {
-    padding: 80px 40px;
+
+  @media (max-width: 1024px) {
+    padding: 40px;
+    flex-direction: column-reverse;
+    gap: 2rem; /* Reduz o espaçamento no mobile */
   }
+`;
+const ContactSectionContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px; 
+  
 `;
 
 export const SectionTitle = styled.h2`
@@ -23,7 +40,7 @@ export const SectionTitle = styled.h2`
 export const SectionSubtitle = styled.h3`
   font-size: 1.1em;
   color: ${COLOR.TEXT.SUBTITLE || '#555'};
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -42,13 +59,14 @@ export const ButtonsWrapper = styled.div`
   @media (min-width: 1024px) {
     flex-direction: row; /* Coloca lado a lado no desktop */
     justify-content: center;
-    max-width: 500px; /* Aumenta a largura máxima para dois botões lado a lado */
+    max-width: 500px;
+    margin-top: 0;
   }
 `;
 
 export const ContactButton = styled.a`
   display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 0;
   text-decoration: none;
   color: ${COLOR.TEXT.TITLE};
   background-color: ${COLOR.BG.SECONDARY};
@@ -56,7 +74,7 @@ export const ContactButton = styled.a`
   font-weight: bold;
   transition: transform 0.2s ease, background-color 0.3s ease;
   text-align: center;
-  min-width: 200px; /* Garante uma largura mínima para os botões */
+  min-width: 150px; /* Garante uma largura mínima para os botões */
 
   &:hover {
     transform: translateY(-2px); /* Efeito de elevação no hover */
@@ -83,41 +101,58 @@ const LinkedInIcon = () => (
   </svg>
 );
 
+const ImageContainer = styled.div`
+  max-width: 600px;
+`;
+
+const NewsletterImage = styled.img`
+  width: auto;
+  max-height: 400px; 
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+`;
+
+
 // Componente Principal da Seção de Contato
 const ContactSection: React.FC = () => {
   return (
     <ContactSectionContainer id="contact">
-      <SectionTitle>Entre em Contato</SectionTitle>
-      <SectionSubtitle>
-        Inicie sua jornada de bem-estar. Fale conosco via WhatsApp para agendar sua consulta ou acesse nosso formulário para outras dúvidas.
-      </SectionSubtitle>
+      <ContactSectionContent>
+        <SectionTitle>Entre em Contato</SectionTitle>
+        <SectionSubtitle>
+          Inicie sua jornada de bem-estar. Fale conosco via WhatsApp para agendar sua consulta ou acesse nosso formulário para outras dúvidas.
+        </SectionSubtitle>
 
-      <ButtonsWrapper>
-        <ContactButton 
-          href="https://wa.me/5521991319121 " 
-          target="_blank" 
-          rel="noopener noreferrer"
-          aria-label="Contactar por WhatsApp"
-        >
-          <WhatsAppIcon />
-        </ContactButton>
-        <ContactButton 
-          href="https://www.instagram.com/psi_laura_dantas/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          aria-label="Visitar meu Instagram"
-        >
-          <InstagramIcon />
-        </ContactButton>
-        <ContactButton 
-          href="https://www.linkedin.com/in/laura-dantas-414152372/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          aria-label="Visitar meu LinkedIn"
-        >
-          <LinkedInIcon />
-        </ContactButton>
-      </ButtonsWrapper>
+        <ButtonsWrapper>
+          <ContactButton 
+            href="https://wa.me/5521991319121 " 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Contactar por WhatsApp"
+          >
+            <WhatsAppIcon />
+          </ContactButton>
+          <ContactButton 
+            href="https://www.instagram.com/psi_laura_dantas/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Visitar meu Instagram"
+          >
+            <InstagramIcon />
+          </ContactButton>
+          <ContactButton 
+            href="https://www.linkedin.com/in/laura-dantas-414152372/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Visitar meu LinkedIn"
+          >
+            <LinkedInIcon />
+          </ContactButton>
+        </ButtonsWrapper>
+      </ContactSectionContent>
+      <ImageContainer>
+        <NewsletterImage src={contactsImage} alt="Imagem de Contato" />
+      </ImageContainer>
     </ContactSectionContainer>
   );
 };
