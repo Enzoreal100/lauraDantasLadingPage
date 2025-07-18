@@ -27,10 +27,10 @@ const HeroContainer = styled.section`
     background-image: url(${heroBackgroundMobile}); 
     background-size: 60vh auto;
     background-position: left bottom;
-    /* Exemplo: ajustando o tamanho de um H1 dentro do Hero */
   }
-  
 
+
+  
   &::before {
     content: '';
     position: absolute;
@@ -47,18 +47,16 @@ const HeroContent = styled.div`
   z-index: 1;
   max-width: 800px;
   padding: 1.25rem;
-  margin-left: 19rem;
+  margin-left: 26rem;
+  max-width: 50%;
 
   @media (max-width: 1024px) {
     padding: 0;
     max-width: 1000px;
-    margin-left: 6rem;
-    margin-right: auto;
-    margin-top: 2rem;
+    margin: 2rem auto;
   }
 
 `;
-
 
 const HeroTitle = styled.h1`
   font-size: 2.5em;
@@ -76,8 +74,8 @@ const HeroSection: React.FC = () => {
   return (
     <HeroContainer id='home'>
       <HeroContent>
-        <HeroTitle>Transforme sua saúde mental com ciência e empatia</HeroTitle>
-        <HeroSubtitle>Terapia Cognitivo-Comportamental | Neurociência | Especialista em Transtornos do Humor e do Comportamento</HeroSubtitle>
+        <HeroTitle>Você se sente sobrecarregado, ansioso ou perdido?</HeroTitle>
+        <HeroSubtitle>A psicoterapia pode ajudar você a compreender seus pensamentos, emoções e comportamentos, oferecendo estratégias práticas e eficazes para recuperar o equilíbrio e o bem-estar.</HeroSubtitle>
         <CTAButton/>
         <CTAForms />
       </HeroContent>
