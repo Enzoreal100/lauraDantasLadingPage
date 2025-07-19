@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import CTAButton from './CTAButton';
 import CTAForms from './CTAForms';
-import heroBackground from '../assets/hero.jpg'; 
-import heroBackgroundMobile from '../assets/hero-mobile.jpg';
+import heroBackground from '../assets/hero.webp'; 
+import heroBackgroundMobile from '../assets/hero-mobile.webp'
+import COLOR from '../constants/colors.constants';
 
 const HeroContainer = styled.section`
-  background-color: #a4a5a4ff;
+  background-color: #f8f8f8ff;
   position: relative;
   width: 100%;
   height: 70vh;
@@ -13,7 +14,7 @@ const HeroContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: ${COLOR.TEXT.TITLE};
   text-align: center;
   background-image: url(${heroBackground});
   background-size: cover;
@@ -22,14 +23,12 @@ const HeroContainer = styled.section`
   padding: 80px 20px 20px 20px;
   box-sizing: border-box;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     height: 50vh;
     background-image: url(${heroBackgroundMobile}); 
     background-size: 60vh auto;
-    background-position: left bottom;
+    background-position: bottom;
   }
-
-
   
   &::before {
     content: '';
@@ -37,8 +36,7 @@ const HeroContainer = styled.section`
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1); /* Optional: Add an overlay for better text readability */
+    bottom: 0;        
   }
 `;
 
@@ -53,7 +51,7 @@ const HeroContent = styled.div`
   @media (max-width: 1024px) {
     padding: 0;
     max-width: 1000px;
-    margin: 2rem auto;
+    margin: 2rem auto 2rem 5rem;
   }
 
 `;
@@ -62,11 +60,11 @@ const HeroTitle = styled.h1`
   font-size: 2.5em;
   margin-bottom: 1rem;
   @media (max-width: 1024px) {
-    font-size: 1.5em; /* Ajuste para telas menores */
+    font-size: 1.2em; /* Ajuste para telas menores */
 `;
 
 const HeroSubtitle = styled.p`
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 1rem;
 `;
 
