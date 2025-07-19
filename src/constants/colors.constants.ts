@@ -1,7 +1,7 @@
 const COLOR = {
   BG: {
     PRIMARY: " #f0f2f5",
-    SECONDARY: "#7797ae",
+    SECONDARY: "#80CEE1",
     HOVER: '#f9f9f9',
   },
   TEXT: {
@@ -15,7 +15,7 @@ const COLOR = {
     SUBTEXT: "#505353"
   },
   CTABUTTON: {
-    BG_FORMS: "#427091ff",
+    BG_FORMS: "#56aec4ff",
     BG_FORMS_HOVER: "#2b6a97ff",
     BG: "#f0f2f5",
     BG_HOVER: "#f1f2f093"
