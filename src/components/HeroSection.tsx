@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
     <HeroContainer id='home'>
       <HeroContent>
         <HeroTitle>Você se sente sobrecarregado, ansioso ou perdido?</HeroTitle>
-        <HeroSubtitle>A psicoterapia pode ajudar você a compreender seus pensamentos, emoções e comportamentos, oferecendo estratégias práticas e eficazes para recuperar o equilíbrio e o bem-estar.</HeroSubtitle>
+        <HeroSubtitle>A Psicoterapia oferece estratégias práticas e eficientes para recuperar o equilíbrio e o bem-estar.</HeroSubtitle>
         <CTAButton/>
         <CTAForms />
       </HeroContent>
